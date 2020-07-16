@@ -1,0 +1,16 @@
+const howOld = (age,year) => { const theCurrentYear = 2020;
+let distanceYear = Math.abs(year - 2020);
+let birthYear = 2020 - age;
+
+ if (year < birthYear){
+return (`The year ${year} was ${distanceYear-age} years before you were born`)
+} else if (year > birthYear && year < 2020){ 
+  return (`You were ${year - birthYear} in the year ${year}`)} 
+else if( year > theCurrentYear){
+  return (`You will be ${year - birthYear} in the year ${year}`)
+}
+
+else{ return'you are 31 year old'}
+}
+ 
+console.log(howOld(31,2000));
